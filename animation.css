@@ -1,0 +1,89 @@
+.camera{
+    animation-name: camera;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    height: 100px;
+    top: 120px;
+    left: 200px;
+}
+
+@keyframes camera{
+    10%,90%{
+        transform: translate(0, 0);
+    }
+    35%,65%{
+        transform: translate(130px, 520px) rotate(360deg);
+    }
+}
+
+.plas{
+    animation-name: plas;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    height: 70px;
+    top: 120px;
+    left: 1050px;
+}
+
+@keyframes plas{
+    10%,90%{
+        transform: translate(0, 0);
+    }
+    35%,65%{
+        transform: translate(-620px, 535px) rotate(360deg);
+    }
+}
+
+.rice{
+    animation-name: rice;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    height: 70px;
+    bottom: 150px;
+    left: 200px;
+}
+
+@keyframes rice{
+    10%,90%{
+        transform: translate(0, 0);
+    }
+    35%,65%{
+        transform: translate(300px, -90px) rotate(360deg);
+    }
+}
+
+.equal{
+    animation-name: equal;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    height: 70px;
+    bottom: 150px;
+    left: 1450px;
+}
+
+@keyframes equal{
+    10%,90%{
+        transform: translate(0, 0);
+    }
+    35%,65%{
+        transform: translate(-870px, -90px) rotate(360deg);
+    }
+}
+
+.fcard{
+    animation-name: fcard;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    height: 70px;
+    bottom: 420px;
+    left: 1600px;
+}
+
+@keyframes fcard{
+    10%,90%{
+        transform: translate(0, 0);
+    }
+    35%,65%{
+        transform: translate(-940px, 180px) rotate(360deg);
+    }
+}

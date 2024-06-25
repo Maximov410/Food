@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url(/animation.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #594F4F;
+}
+
+.title-fonts{
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+}
+
+/*=============================================navigation*/
+
+.navigation{
+    position: relative;
+    background-color: #547980;
+    height: 10vh;
+    border-bottom: 3px solid black;
+}
+
+.navigation-logo{
+    height: 100%;
+    margin-left: 20px;
+}
+
+.navigation-wrap{
+    line-height: 10vh;
+    float: right;
+    margin-right: 40px;
+}
+
+.navigation-button{
+    text-decoration: none;
+    color: #9DE0AD;
+    margin-left: 20px;
+}
+
+.navigation-button:hover{
+    color: #E5FCC2;
+    border-bottom: 2px solid #E5FCC2;
+}
+
+/*=============================================main*/
+
+.main{
+    height: 90vh;
+    background-image: url(img/main.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.main-wrap-background{
+    position: absolute;
+    height: 20vh;
+    background-color: #547980;
+}
+
+.main-wrap{
+    display: inline-block;
+    margin: auto;
+    margin-top: 30vh;
+    width: 90%;
+    backdrop-filter: blur(100px);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.main-title{
+    font-size: 60px;
+    color: #9DE0AD;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.main-subtitle{
+    font-size: 22px;
+    color: #9DE0AD;
+    min-width: 80%;
+}
+
+.main-button{
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px;
+    border-radius: 50px;
+    color: #9DE0AD;
+    background-color: #594F4F;
+    transition: 0.5s;
+}
+
+.main-button:hover{
+    color: #594F4F;
+    background-color: #9DE0AD;
+}
+
+/*=============================================about*/
+
+.about{
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(#547980, #594F4F 70%);
+    position: relative;
+}
+
+.about-container{
+    padding-top: 110px;
+    height: 90%;
+}
+
+.about-wrap{
+    display: inline-block;
+    vertical-align: top;
+    backdrop-filter: blur(100px);
+    width: 40%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.about-wrap-background{
+    position: absolute;
+    height: 630px;
+    background-color: #45ADA8;
+}
+
+.about-title{
+    margin: 20px 10px;
+    color: #9DE0AD;
+}
+
+.about-text{
+    font-size: 18px;
+    margin: 0 15px;
+    margin-top: 30px;
+    color: #E5FCC2;
+    text-align: justify;
+}
+
+.about-pic{
+    width: 40%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+}
+
+.about-img{
+    position: absolute;
+}
+
+/*=============================================galery*/
+
+.galery{
+    min-height: calc(100vh - 20px);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    background: linear-gradient(170deg, #594F4F 30%, #45ADA8 10%, #547980 70%);
+}
+
+.galery-title{
+    color: #45ADA8;
+    margin-bottom: 20px;
+}
+
+.galery-img{
+    margin: 5px 15px;
+    height: 270px;
+    width: 30%;
+    border-radius: 20px;
+    border: #9DE0AD 2px solid;
+    transition: 0.6s;
+}
+
+.galery-img:hover{
+    scale: 1.2;
+}
+
+/*=============================================cours*/
+
+.cours{
+    min-height: calc(100vh - 90px);
+    background-color: #547980;
+    padding-top: 90px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+.cours-title{
+    color: #E5FCC2;
+    margin-bottom: 40px;
+}
+
+.cours-card{
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    height: 600px;
+    width: 30%;
+    padding: 20px;
+    margin: 25px 25px;
+    background-color: #9DE0AD;
+    border-radius: 20px;
+    border: #594F4F 3px solid;
+}
+
+.card-title{
+    color: black;
+    margin: 25px 0;
+    font-size: 22px;
+}
+
+.card-line{
+    background-color: #594F4F;
+    border: 0;
+    height: 4px;
+    width: 85%;
+    margin: auto;
+}
+
+.card-date{
+    color: black;
+    font-size: 25px;
+    margin: 30px;
+}
+
+.card-info{
+    color: black;
+    font-size: 18px;
+    margin: 15px;
+    text-align: justify;
+
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-button{
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    text-decoration: none;
+    background-color: #594F4F;
+    color: #9DE0AD;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 5px #594F4F solid;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.card-button:hover{
+    background-color: #9DE0AD;
+    color: #594F4F;
+    transform: translateX(-50%) scale(1.2);
+}
+
+/*=============================================contact*/
+
+.contact{
+    min-height: 70vh;
+    background: linear-gradient(-10deg, #594F4F 45%, #45ADA8 20%, #547980 70%);
+    text-align: center;
+    padding-top: 90px;
+}
+
+.contact-title{
+    color: #E5FCC2;
+}
+
+.contact-number{
+    font-size: 90px;
+    margin-top: 60px;
+    color: black;
+}
+
+.contact-mail{
+    font-size: 90px;
+    margin-top: 18px;
+    color: black;
+}
+
+.contact-img{
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 80px;
+    margin: 130px 30px;
+    transition: 0.2s;
+}
+
+.contact-img:hover{
+    scale: 1.1;
+    background-color: #45ADA8;
+}
+
+/*=============================================footer*/
+
+.footer{
+    height: 6vh;
+    text-align: center;
+}
+
+.footer-title{
+    color: #45ADA8;
+}
+
+.footer-text{
+    color: #547980;
+}
